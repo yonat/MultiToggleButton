@@ -7,46 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DCB36FBB1AA7652B000BB80E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB36FBA1AA7652B000BB80E /* AppDelegate.swift */; };
-		DCB36FBD1AA7652B000BB80E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB36FBC1AA7652B000BB80E /* ViewController.swift */; };
-		DCB36FC01AA7652B000BB80E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCB36FBE1AA7652B000BB80E /* Main.storyboard */; };
-		DCB36FC21AA7652B000BB80E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCB36FC11AA7652B000BB80E /* Images.xcassets */; };
-		DCB36FC51AA7652B000BB80E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = DCB36FC31AA7652B000BB80E /* LaunchScreen.xib */; };
-		DCB36FD11AA7652B000BB80E /* MultiToggleButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB36FD01AA7652B000BB80E /* MultiToggleButtonTests.swift */; };
+		DCB36FDB1AA7657D000BB80E /* ToggleButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB36FDA1AA7657D000BB80E /* ToggleButtonDemo.swift */; };
+		DCB36FDD1AA7659A000BB80E /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB36FDC1AA7659A000BB80E /* ToggleButton.swift */; };
+		DCB36FDF1AA765CC000BB80E /* camera-flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCB36FDE1AA765CC000BB80E /* camera-flash@2x.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DCB36FCB1AA7652B000BB80E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DCB36FAD1AA7652B000BB80E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DCB36FB41AA7652B000BB80E;
-			remoteInfo = MultiToggleButton;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		DCB36FB51AA7652B000BB80E /* MultiToggleButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiToggleButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB36FB91AA7652B000BB80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCB36FBA1AA7652B000BB80E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DCB36FBC1AA7652B000BB80E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DCB36FBF1AA7652B000BB80E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DCB36FC11AA7652B000BB80E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		DCB36FC41AA7652B000BB80E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		DCB36FCA1AA7652B000BB80E /* MultiToggleButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MultiToggleButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		DCB36FCF1AA7652B000BB80E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCB36FD01AA7652B000BB80E /* MultiToggleButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiToggleButtonTests.swift; sourceTree = "<group>"; };
+		DCB36FDA1AA7657D000BB80E /* ToggleButtonDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButtonDemo.swift; sourceTree = "<group>"; };
+		DCB36FDC1AA7659A000BB80E /* ToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButton.swift; sourceTree = "<group>"; };
+		DCB36FDE1AA765CC000BB80E /* camera-flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-flash@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		DCB36FB21AA7652B000BB80E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCB36FC71AA7652B000BB80E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,8 +34,8 @@
 		DCB36FAC1AA7652B000BB80E = {
 			isa = PBXGroup;
 			children = (
+				DCB36FDC1AA7659A000BB80E /* ToggleButton.swift */,
 				DCB36FB71AA7652B000BB80E /* MultiToggleButton */,
-				DCB36FCD1AA7652B000BB80E /* MultiToggleButtonTests */,
 				DCB36FB61AA7652B000BB80E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -69,7 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				DCB36FB51AA7652B000BB80E /* MultiToggleButton.app */,
-				DCB36FCA1AA7652B000BB80E /* MultiToggleButtonTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,11 +51,8 @@
 		DCB36FB71AA7652B000BB80E /* MultiToggleButton */ = {
 			isa = PBXGroup;
 			children = (
-				DCB36FBA1AA7652B000BB80E /* AppDelegate.swift */,
-				DCB36FBC1AA7652B000BB80E /* ViewController.swift */,
-				DCB36FBE1AA7652B000BB80E /* Main.storyboard */,
-				DCB36FC11AA7652B000BB80E /* Images.xcassets */,
-				DCB36FC31AA7652B000BB80E /* LaunchScreen.xib */,
+				DCB36FDA1AA7657D000BB80E /* ToggleButtonDemo.swift */,
+				DCB36FDE1AA765CC000BB80E /* camera-flash@2x.png */,
 				DCB36FB81AA7652B000BB80E /* Supporting Files */,
 			);
 			path = MultiToggleButton;
@@ -91,23 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				DCB36FB91AA7652B000BB80E /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		DCB36FCD1AA7652B000BB80E /* MultiToggleButtonTests */ = {
-			isa = PBXGroup;
-			children = (
-				DCB36FD01AA7652B000BB80E /* MultiToggleButtonTests.swift */,
-				DCB36FCE1AA7652B000BB80E /* Supporting Files */,
-			);
-			path = MultiToggleButtonTests;
-			sourceTree = "<group>";
-		};
-		DCB36FCE1AA7652B000BB80E /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				DCB36FCF1AA7652B000BB80E /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,24 +86,6 @@
 			productReference = DCB36FB51AA7652B000BB80E /* MultiToggleButton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		DCB36FC91AA7652B000BB80E /* MultiToggleButtonTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DCB36FD71AA7652B000BB80E /* Build configuration list for PBXNativeTarget "MultiToggleButtonTests" */;
-			buildPhases = (
-				DCB36FC61AA7652B000BB80E /* Sources */,
-				DCB36FC71AA7652B000BB80E /* Frameworks */,
-				DCB36FC81AA7652B000BB80E /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DCB36FCC1AA7652B000BB80E /* PBXTargetDependency */,
-			);
-			name = MultiToggleButtonTests;
-			productName = MultiToggleButtonTests;
-			productReference = DCB36FCA1AA7652B000BB80E /* MultiToggleButtonTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +97,6 @@
 				TargetAttributes = {
 					DCB36FB41AA7652B000BB80E = {
 						CreatedOnToolsVersion = 6.3;
-					};
-					DCB36FC91AA7652B000BB80E = {
-						CreatedOnToolsVersion = 6.3;
-						TestTargetID = DCB36FB41AA7652B000BB80E;
 					};
 				};
 			};
@@ -182,7 +114,6 @@
 			projectRoot = "";
 			targets = (
 				DCB36FB41AA7652B000BB80E /* MultiToggleButton */,
-				DCB36FC91AA7652B000BB80E /* MultiToggleButtonTests */,
 			);
 		};
 /* End PBXProject section */
@@ -192,16 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB36FC01AA7652B000BB80E /* Main.storyboard in Resources */,
-				DCB36FC51AA7652B000BB80E /* LaunchScreen.xib in Resources */,
-				DCB36FC21AA7652B000BB80E /* Images.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCB36FC81AA7652B000BB80E /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				DCB36FDF1AA765CC000BB80E /* camera-flash@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,47 +134,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCB36FBD1AA7652B000BB80E /* ViewController.swift in Sources */,
-				DCB36FBB1AA7652B000BB80E /* AppDelegate.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DCB36FC61AA7652B000BB80E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				DCB36FD11AA7652B000BB80E /* MultiToggleButtonTests.swift in Sources */,
+				DCB36FDB1AA7657D000BB80E /* ToggleButtonDemo.swift in Sources */,
+				DCB36FDD1AA7659A000BB80E /* ToggleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DCB36FCC1AA7652B000BB80E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DCB36FB41AA7652B000BB80E /* MultiToggleButton */;
-			targetProxy = DCB36FCB1AA7652B000BB80E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		DCB36FBE1AA7652B000BB80E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCB36FBF1AA7652B000BB80E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DCB36FC31AA7652B000BB80E /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCB36FC41AA7652B000BB80E /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		DCB36FD21AA7652B000BB80E /* Debug */ = {
@@ -342,9 +229,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MultiToggleButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -352,43 +241,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = MultiToggleButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		DCB36FD81AA7652B000BB80E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MultiToggleButtonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiToggleButton.app/MultiToggleButton";
-			};
-			name = Debug;
-		};
-		DCB36FD91AA7652B000BB80E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = MultiToggleButtonTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MultiToggleButton.app/MultiToggleButton";
 			};
 			name = Release;
 		};
@@ -409,14 +265,6 @@
 			buildConfigurations = (
 				DCB36FD51AA7652B000BB80E /* Debug */,
 				DCB36FD61AA7652B000BB80E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		DCB36FD71AA7652B000BB80E /* Build configuration list for PBXNativeTarget "MultiToggleButtonTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				DCB36FD81AA7652B000BB80E /* Debug */,
-				DCB36FD91AA7652B000BB80E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
