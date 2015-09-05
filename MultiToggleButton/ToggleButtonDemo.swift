@@ -29,9 +29,9 @@ extension UIView {
     }
     
     func addSubview(subview: UIView, constrain: NSLayoutAttribute...) {
-        subview.setTranslatesAutoresizingMaskIntoConstraints(false)
+        subview.translatesAutoresizingMaskIntoConstraints = false
         addSubview(subview)
-        constrain.map { self.constrain(subview, to: $0) }
+        constrain.forEach { self.constrain(subview, to: $0) }
     }
 }
 

@@ -92,6 +92,8 @@
 		DCB36FAD1AA7652B000BB80E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0630;
 				ORGANIZATIONNAME = "Yonat Sharon";
 				TargetAttributes = {
