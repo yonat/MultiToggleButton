@@ -1,0 +1,6 @@
+framework module Pods_MultiToggleButton {
+  umbrella header "Pods-MultiToggleButton-umbrella.h"
+
+  export *
+  module * { export * }
+}

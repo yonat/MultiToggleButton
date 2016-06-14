@@ -1,0 +1,41 @@
+// Generated using SwiftGen, by O.Halligon — https://github.com/AliSoftware/SwiftGen
+
+{% if families %}
+#if os(iOS)
+  import UIKit.UIFont
+  typealias Font = UIFont
+#elseif os(OSX)
+  import AppKit.NSFont
+  typealias Font = NSFont
+#endif
+
+protocol FontConvertible {
+  func font(size: CGFloat) -> Font!
+}
+
+extension FontConvertible where Self: RawRepresentable, Self.RawValue == String {
+  func font(size: CGFloat) -> Font! {
+    return Font(font: self, size: size)
+  }
+}
+
+extension Font {
+  convenience init!<FontType: FontConvertible
+    where FontType: RawRepresentable, FontType.RawValue == String>
+    (font: FontType, size: CGFloat) {
+      self.init(name: font.rawValue, size: size)
+  }
+}
+
+struct {{enumName}} {
+  {% for family in families %}
+  enum {{family.name|swiftIdentifier|snakeToCamelCaseNoPrefix}}: String, FontConvertible {
+    {% for font in family.fonts %}
+    case {{font.style|swiftIdentifier|snakeToCamelCaseNoPrefix}} = "{{font.fontName}}"
+    {% endfor %}
+  }
+  {% endfor %}
+}
+{% else %}
+// No fonts found
+{% endif %}

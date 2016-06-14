@@ -19,7 +19,7 @@ class ToggleButton: UIButton
         self.states = states
         self.colors = colors
         self.action = action
-        addTarget(self, action: "toggle", forControlEvents: .TouchUpInside)
+        addTarget(self, action: #selector(ToggleButton.toggle), forControlEvents: .TouchUpInside)
         
         setupCurrentState()
     }

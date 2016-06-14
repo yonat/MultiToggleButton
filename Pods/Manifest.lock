@@ -1,0 +1,12 @@
+PODS:
+  - SwiftGen (1.1.0)
+
+DEPENDENCIES:
+  - SwiftGen
+
+SPEC CHECKSUMS:
+  SwiftGen: 32ece516f3c68dc70ebc7d71c0bbdac5fef73069
+
+PODFILE CHECKSUM: d27a59be35caa557f0e60c0d143a976fa4112d18
+
+COCOAPODS: 1.0.1
