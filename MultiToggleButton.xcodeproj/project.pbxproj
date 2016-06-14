@@ -13,6 +13,7 @@
 		383D94881D10A2290089EC9B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 383D94871D10A2290089EC9B /* Localizable.strings */; };
 		383D948A1D10A2600089EC9B /* String+L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D94891D10A2600089EC9B /* String+L10n.swift */; };
 		383D948C1D10A3110089EC9B /* UIImage+Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 383D948B1D10A3110089EC9B /* UIImage+Assets.swift */; };
+		383D94901D10A7D10089EC9B /* Acknowledgement in Resources */ = {isa = PBXBuildFile; fileRef = 383D948F1D10A7D10089EC9B /* Acknowledgement */; };
 		DCB36FDB1AA7657D000BB80E /* ToggleButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB36FDA1AA7657D000BB80E /* ToggleButtonDemo.swift */; };
 		DCB36FDD1AA7659A000BB80E /* ToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB36FDC1AA7659A000BB80E /* ToggleButton.swift */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,7 @@
 		383D94871D10A2290089EC9B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		383D94891D10A2600089EC9B /* String+L10n.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+L10n.swift"; sourceTree = "<group>"; };
 		383D948B1D10A3110089EC9B /* UIImage+Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Assets.swift"; sourceTree = "<group>"; };
+		383D948F1D10A7D10089EC9B /* Acknowledgement */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Acknowledgement; sourceTree = "<group>"; };
 		55F416460E45B70F820B3FED /* Pods-MultiToggleButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiToggleButton.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiToggleButton/Pods-MultiToggleButton.release.xcconfig"; sourceTree = "<group>"; };
 		C0481047E97207EFB04DE402 /* Pods_MultiToggleButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiToggleButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB36FB51AA7652B000BB80E /* MultiToggleButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiToggleButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 			children = (
 				383D94871D10A2290089EC9B /* Localizable.strings */,
 				383D948B1D10A3110089EC9B /* UIImage+Assets.swift */,
+				383D948F1D10A7D10089EC9B /* Acknowledgement */,
 				383D94891D10A2600089EC9B /* String+L10n.swift */,
 				383D947F1D10A15F0089EC9B /* Assets.xcassets */,
 				DCB36FB91AA7652B000BB80E /* Info.plist */,
@@ -169,6 +172,7 @@
 				383D94801D10A15F0089EC9B /* Assets.xcassets in Resources */,
 				383D94881D10A2290089EC9B /* Localizable.strings in Resources */,
 				383D94821D10A1970089EC9B /* Storyboard.storyboard in Resources */,
+				383D94901D10A7D10089EC9B /* Acknowledgement in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

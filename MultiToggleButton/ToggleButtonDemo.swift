@@ -20,7 +20,20 @@ class ToggleButtonViewController: UIViewController {
             ],
             states: [tr(.Toggle), tr(.State), tr(.Alter), tr(.Color)],
             colors: [nil, nil, UIColor.grayColor(), UIColor.redColor()]
-        )
+        ) { button in
+            switch button.currentStateIndex {
+            case 0:
+                print("Performing action for state: 0")
+            case 1:
+                print("Performing action for state: 1")
+            case 2:
+                print("Performing action for state: 2")
+            case 3:
+                print("Performing action for state: 3")
+            default:
+                print("Performing action for state: default")
+            }
+        }
 
         view.addSubview(toggleButton, constrain: .CenterX, .CenterY)
     }
