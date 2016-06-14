@@ -10,7 +10,7 @@ A UIButton subclass that implements tap-to-toggle button text. (Like the camera 
 Just **create** it with the states, and it's good to go:
 
 ```swift
-let toggleButton = ToggleButton(image: myImage, states: ["First", "Second", "Last"])
+let toggleButton = ToggleButton(images: [myFirstImage, mySecondImage, myLastImage], states: ["First", "Second", "Last"])
 ```
 
 Get and set the **current state**:
@@ -38,7 +38,7 @@ Or do it **all at once**:
 
 ```swift
 let toggleButton = ToggleButton(
-    image: myImage,
+    images: [myFirstImage, mySecondImage, myLastImage],
     states: ["First", "Second", "Last"],
     colors: [nil, UIColor.grayColor(), UIColor.redColor()],
     action: { (sender) -> () in doStuff(sender.currentStateIndex) }
