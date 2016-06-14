@@ -11,11 +11,14 @@ import UIKit
 class ToggleButton: UIButton
 {
     /// use only this init, it's 'convenience' only to avoid overriding required inits
-    convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
+    convenience init(images: [UIImage?], states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
         self.init(frame: CGRectZero)
-        setImage(image, forState: .Normal)
+        if let image = images.first {
+            setImage(image, forState: .Normal)
+        }
         sizeToFit()
         
+        self.images = images
         self.states = states
         self.colors = colors
         self.action = action
@@ -33,6 +36,7 @@ class ToggleButton: UIButton
     
     var currentStateIndex: Int = 0      { didSet {setupCurrentState()} }
     var colors: [UIColor?] = []         { didSet {setupCurrentState()} }
+    var images: [UIImage?] = []         { didSet {setupCurrentState()} }
     var states: [String] = [] {
         didSet {
             currentStateIndex %= states.count
@@ -54,9 +58,15 @@ class ToggleButton: UIButton
     private func setupCurrentState() {
         setTitle(" " + states[currentStateIndex], forState: .Normal)
         setTitleColor(currentColor ?? tintColor, forState: .Normal)
+        setImage(myCurrentImage ?? currentImage, forState: .Normal)
     }
     
     private var currentColor: UIColor? {
         return currentStateIndex < colors.count ? colors[currentStateIndex] : nil
+    }
+    
+    private var myCurrentImage: UIImage? {
+        let debug = currentStateIndex < images.count ? images[currentStateIndex] : nil
+        return debug
     }
 }
