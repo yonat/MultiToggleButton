@@ -22,11 +22,15 @@ class ToggleButton: UIButton
         self.states = states
         self.colors = colors
         self.action = action
-        addTarget(self, action: "toggle", forControlEvents: .TouchUpInside)
+        addTarget(self, action: #selector(toggle), forControlEvents: .TouchUpInside)
         
         setupCurrentState()
     }
-    
+
+    convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
+        self.init(images: [image], states: states, colors: colors, action: action)
+    }
+
     // MARK: - Manual Control
     
     func toggle() {
@@ -66,7 +70,6 @@ class ToggleButton: UIButton
     }
     
     private var myCurrentImage: UIImage? {
-        let debug = currentStateIndex < images.count ? images[currentStateIndex] : nil
-        return debug
+        return currentStateIndex < images.count ? images[currentStateIndex] : nil
     }
 }
