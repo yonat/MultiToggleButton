@@ -13,12 +13,13 @@ class ToggleButtonViewController: UIViewController {
     override func viewDidLoad() {
         
         let toggleButton = ToggleButton(
-            images: [UIImage.Asset.Camera_Flash.image,
-                UIImage.Asset.Facebook.image,
-                UIImage.Asset.Clock.image,
-                UIImage.Asset.Test_tube.image
+            images: [
+                UIImage(named: "camera-flash"),
+                UIImage(named: "facebook"),
+                UIImage(named: "clock"),
+                UIImage(named: "test_tube")
             ],
-            states: [tr(.Toggle), tr(.State), tr(.Alter), tr(.Color)],
+            states: ["Toggle", "State", "Alter", "Color"],
             colors: [nil, nil, UIColor.grayColor(), UIColor.redColor()]
         ) { button in
             switch button.currentStateIndex {
