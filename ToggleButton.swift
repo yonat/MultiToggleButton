@@ -27,7 +27,7 @@ public class ToggleButton: UIButton
         setupCurrentState()
     }
     
-    internal convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
+    public convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
         self.init(images: [image], states: states, colors: colors, action: action)
     }
     
