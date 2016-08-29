@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ToggleButton: UIButton
+public class ToggleButton: UIButton
 {
     /// use only this init, it's 'convenience' only to avoid overriding required inits
-    convenience init(images: [UIImage?], states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
+    public convenience init(images: [UIImage?], states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
         self.init(frame: CGRectZero)
         if let image = images.first {
             setImage(image, forState: .Normal)
@@ -26,32 +26,32 @@ class ToggleButton: UIButton
         
         setupCurrentState()
     }
-
-    convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
+    
+    public convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
         self.init(images: [image], states: states, colors: colors, action: action)
     }
-
+    
     // MARK: - Manual Control
     
-    func toggle() {
+    public func toggle() {
         currentStateIndex = (currentStateIndex + 1) % states.count
         action?(sender: self)
     }
     
-    var currentStateIndex: Int = 0      { didSet {setupCurrentState()} }
-    var colors: [UIColor?] = []         { didSet {setupCurrentState()} }
-    var images: [UIImage?] = []         { didSet {setupCurrentState()} }
-    var states: [String] = [] {
+    public var currentStateIndex: Int = 0      { didSet {setupCurrentState()} }
+    public var colors: [UIColor?] = []         { didSet {setupCurrentState()} }
+    public var images: [UIImage?] = []         { didSet {setupCurrentState()} }
+    public var states: [String] = [] {
         didSet {
             currentStateIndex %= states.count
             setupCurrentState()
         }
     }
-    var action: ((sender: ToggleButton) -> ())?
+    public var action: ((sender: ToggleButton) -> ())?
     
     // MARK: - Overrides
     
-    override func tintColorDidChange() {
+    public override func tintColorDidChange() {
         if nil == currentColor {
             setTitleColor(tintColor, forState: .Normal)
         }
