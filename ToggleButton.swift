@@ -13,6 +13,7 @@ public class ToggleButton: UIButton
     /// use only this init, it's 'convenience' only to avoid overriding required inits
     public convenience init(images: [UIImage?], states: [String], colors: [UIColor?] = [], action: ((sender: ToggleButton) -> ())? = nil) {
         self.init(frame: CGRectZero)
+        
         if let image = images.first {
             setImage(image, forState: .Normal)
         }
@@ -47,11 +48,15 @@ public class ToggleButton: UIButton
             setupCurrentState()
         }
     }
-    public var action: ((sender: ToggleButton) -> ())?
+    public var action: ((sender: ToggleButton) -> ())? {
+        didSet {
+            addTarget(self, action: #selector(toggle), forControlEvents: .TouchUpInside)
+        }
+    }
     
     // MARK: - Overrides
     
-    public override func tintColorDidChange() {
+    override public func tintColorDidChange() {
         if nil == currentColor {
             setTitleColor(tintColor, forState: .Normal)
         }
