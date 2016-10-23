@@ -56,7 +56,7 @@ public class ToggleButton: UIButton
     
     // MARK: - Overrides
     
-    override public func tintColorDidChange() {
+    public override func tintColorDidChange() {
         if nil == currentColor {
             setTitleColor(tintColor, forState: .Normal)
         }
