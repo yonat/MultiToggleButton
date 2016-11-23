@@ -2,7 +2,7 @@
 A UIButton subclass that implements tap-to-toggle button text. (Like the camera flash and timer buttons)
 
 <p align="center">
-<img src="Screenshots/toggle.gif">
+<img src="screenshots/toggle.gif">
 </p>
 
 ## Usage
