@@ -1,0 +1,7 @@
+use_frameworks!
+pod 'MultiToggleButton', :path => '..'
+
+pod 'MiniLayout'
+
+target 'MultiToggleButtonDemo' do
+end

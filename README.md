@@ -2,7 +2,7 @@
 A UIButton subclass that implements tap-to-toggle button text. (Like the camera flash and timer buttons)
 
 <p align="center">
-<img src="screenshots/toggle.gif">
+<img src="Screenshots/toggle.gif">
 </p>
 
 ## Usage
@@ -10,7 +10,7 @@ A UIButton subclass that implements tap-to-toggle button text. (Like the camera 
 Just **create** it with the states, and it's good to go:
 
 ```swift
-let toggleButton = ToggleButton(image: myImage, states: ["First", "Second", "Last"])
+let toggleButton = MultiToggleButton(image: myImage, states: ["First", "Second", "Last"])
 ```
 
 Get and set the **current state**:
@@ -28,10 +28,10 @@ toggleButton.action = { (sender) -> () in
 }
 ```
 
-Set **different colors** for different states (nil uses the button's ```tintColor```):
+Set **different colors** for different states (`nil` uses the button's ```tintColor```):
 
 ```swift
-toggleButton.colors = [nil, UIColor.grayColor(), UIColor.redColor()]
+toggleButton.colors = [nil, .gray, .red]
 ```
 
 Set **different images** for different states:
@@ -46,7 +46,25 @@ Or do it **all at once**:
 let toggleButton = ToggleButton(
     images: [myFirstImage, mySecondImage, myLastImage],
     states: ["First", "Second", "Last"],
-    colors: [nil, UIColor.grayColor(), UIColor.redColor()],
+    colors: [nil, .gray, .red],
     action: { (sender) -> () in doStuff(sender.currentStateIndex) }
 )
 ```
+
+## Installation
+
+### CocoaPods:
+
+```ruby
+pod 'MultiToggleButton'
+```
+
+For legacy Swift 2.3:
+
+```ruby
+pod 'MultiToggleButton', '1.4.0'
+```
+
+### Manually:
+
+Copy `Sources/MultiToggleButton.swift` to your Xcode project.

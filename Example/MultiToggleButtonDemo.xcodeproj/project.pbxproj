@@ -1,0 +1,378 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A12B377FB76B7BB546AF1744 /* Pods_MultiToggleButtonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36342501556D3E0E08DC5C08 /* Pods_MultiToggleButtonDemo.framework */; };
+		DC5E611E1DE628A70063B0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E611C1DE628A70063B0D8 /* LaunchScreen.storyboard */; };
+		DC5E612A1DE6295E0063B0D8 /* camera-flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61251DE6295E0063B0D8 /* camera-flash@2x.png */; };
+		DC5E612B1DE6295E0063B0D8 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61261DE6295E0063B0D8 /* clock.png */; };
+		DC5E612C1DE6295E0063B0D8 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61271DE6295E0063B0D8 /* facebook.png */; };
+		DC5E612D1DE6295E0063B0D8 /* test_tube.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61281DE6295E0063B0D8 /* test_tube.png */; };
+		DC5E612E1DE6295E0063B0D8 /* ToggleButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E61291DE6295E0063B0D8 /* ToggleButtonDemo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A1E3D7EC9DEFAD305D7D0F0 /* Pods-MultiToggleButtonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiToggleButtonDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo.release.xcconfig"; sourceTree = "<group>"; };
+		36342501556D3E0E08DC5C08 /* Pods_MultiToggleButtonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiToggleButtonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C353DD3F576DFDA6EA48A38D /* Pods-MultiToggleButtonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiToggleButtonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DC5E61101DE628A70063B0D8 /* MultiToggleButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiToggleButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC5E611D1DE628A70063B0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC5E611F1DE628A70063B0D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC5E61251DE6295E0063B0D8 /* camera-flash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "camera-flash@2x.png"; sourceTree = "<group>"; };
+		DC5E61261DE6295E0063B0D8 /* clock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clock.png; sourceTree = "<group>"; };
+		DC5E61271DE6295E0063B0D8 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		DC5E61281DE6295E0063B0D8 /* test_tube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_tube.png; sourceTree = "<group>"; };
+		DC5E61291DE6295E0063B0D8 /* ToggleButtonDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButtonDemo.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC5E610D1DE628A70063B0D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A12B377FB76B7BB546AF1744 /* Pods_MultiToggleButtonDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		935C13C6E41231C23DF1592A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				36342501556D3E0E08DC5C08 /* Pods_MultiToggleButtonDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC5E61071DE628A70063B0D8 = {
+			isa = PBXGroup;
+			children = (
+				DC5E61121DE628A70063B0D8 /* MultiToggleButtonDemo */,
+				DC5E61111DE628A70063B0D8 /* Products */,
+				EFCB9201B9C33CCF682EA739 /* Pods */,
+				935C13C6E41231C23DF1592A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DC5E61111DE628A70063B0D8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC5E61101DE628A70063B0D8 /* MultiToggleButtonDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC5E61121DE628A70063B0D8 /* MultiToggleButtonDemo */ = {
+			isa = PBXGroup;
+			children = (
+				DC5E61251DE6295E0063B0D8 /* camera-flash@2x.png */,
+				DC5E61261DE6295E0063B0D8 /* clock.png */,
+				DC5E61271DE6295E0063B0D8 /* facebook.png */,
+				DC5E61281DE6295E0063B0D8 /* test_tube.png */,
+				DC5E61291DE6295E0063B0D8 /* ToggleButtonDemo.swift */,
+				DC5E611C1DE628A70063B0D8 /* LaunchScreen.storyboard */,
+				DC5E611F1DE628A70063B0D8 /* Info.plist */,
+			);
+			path = MultiToggleButtonDemo;
+			sourceTree = "<group>";
+		};
+		EFCB9201B9C33CCF682EA739 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C353DD3F576DFDA6EA48A38D /* Pods-MultiToggleButtonDemo.debug.xcconfig */,
+				0A1E3D7EC9DEFAD305D7D0F0 /* Pods-MultiToggleButtonDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC5E610F1DE628A70063B0D8 /* MultiToggleButtonDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC5E61221DE628A70063B0D8 /* Build configuration list for PBXNativeTarget "MultiToggleButtonDemo" */;
+			buildPhases = (
+				7313476D0B2974DC65D83BB2 /* [CP] Check Pods Manifest.lock */,
+				DC5E610C1DE628A70063B0D8 /* Sources */,
+				DC5E610D1DE628A70063B0D8 /* Frameworks */,
+				DC5E610E1DE628A70063B0D8 /* Resources */,
+				634A53F2F24E5448902CE116 /* [CP] Embed Pods Frameworks */,
+				EB5A6EA1CA9FB23B1FEFC8A9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MultiToggleButtonDemo;
+			productName = MultiToggleButtonDemo;
+			productReference = DC5E61101DE628A70063B0D8 /* MultiToggleButtonDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC5E61081DE628A70063B0D8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Yonat Sharon";
+				TargetAttributes = {
+					DC5E610F1DE628A70063B0D8 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DC5E610B1DE628A70063B0D8 /* Build configuration list for PBXProject "MultiToggleButtonDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC5E61071DE628A70063B0D8;
+			productRefGroup = DC5E61111DE628A70063B0D8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC5E610F1DE628A70063B0D8 /* MultiToggleButtonDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC5E610E1DE628A70063B0D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5E612A1DE6295E0063B0D8 /* camera-flash@2x.png in Resources */,
+				DC5E612C1DE6295E0063B0D8 /* facebook.png in Resources */,
+				DC5E612B1DE6295E0063B0D8 /* clock.png in Resources */,
+				DC5E612D1DE6295E0063B0D8 /* test_tube.png in Resources */,
+				DC5E611E1DE628A70063B0D8 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		634A53F2F24E5448902CE116 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7313476D0B2974DC65D83BB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EB5A6EA1CA9FB23B1FEFC8A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC5E610C1DE628A70063B0D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC5E612E1DE6295E0063B0D8 /* ToggleButtonDemo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC5E611C1DE628A70063B0D8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC5E611D1DE628A70063B0D8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC5E61201DE628A70063B0D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC5E61211DE628A70063B0D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC5E61231DE628A70063B0D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C353DD3F576DFDA6EA48A38D /* Pods-MultiToggleButtonDemo.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MultiToggleButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.MultiToggleButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC5E61241DE628A70063B0D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1E3D7EC9DEFAD305D7D0F0 /* Pods-MultiToggleButtonDemo.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = MultiToggleButtonDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.MultiToggleButtonDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC5E610B1DE628A70063B0D8 /* Build configuration list for PBXProject "MultiToggleButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5E61201DE628A70063B0D8 /* Debug */,
+				DC5E61211DE628A70063B0D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC5E61221DE628A70063B0D8 /* Build configuration list for PBXNativeTarget "MultiToggleButtonDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC5E61231DE628A70063B0D8 /* Debug */,
+				DC5E61241DE628A70063B0D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC5E61081DE628A70063B0D8 /* Project object */;
+}

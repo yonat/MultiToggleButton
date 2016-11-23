@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MultiToggleButton"
-  s.version      = "1.4.0"
+  s.version      = "1.5.0"
   s.summary      = "Multiple state tap to toggle UIButton in Swift"
 
   s.description  = <<-DESC
@@ -21,7 +21,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/yonat/MultiToggleButton.git", :tag => s.version }
 
-  s.source_files  = "ToggleButton.swift"
+  s.source_files  = "Sources/*.swift"
 
   s.requires_arc = true
 
