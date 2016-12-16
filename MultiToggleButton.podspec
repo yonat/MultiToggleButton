@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MultiToggleButton"
-  s.version      = "1.5.0"
+  s.version      = "1.5.1"
   s.summary      = "Multiple state tap to toggle UIButton in Swift"
 
   s.description  = <<-DESC
