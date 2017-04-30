@@ -67,12 +67,8 @@ open class MultiToggleButton: UIButton
     // MARK: - Private
     
     private func setupCurrentState() {
-        //if you not set any title you want to set image in center
-        if states[currentStateIndex] == ""{
-            setTitle(states[currentStateIndex], for: UIControlState())
-        }else{
-            setTitle(" " + states[currentStateIndex], for: UIControlState())
-        }
+        let currentTitle = states[currentStateIndex]
+        setTitle(currentTitle.isEmpty ? nil : " " + currentTitle, for: UIControlState())
         setTitleColor(currentColor ?? tintColor, for: UIControlState())
         setImage(currentToggleImage ?? currentImage, for: UIControlState())
     }
