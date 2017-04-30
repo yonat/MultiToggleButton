@@ -1,6 +1,6 @@
 PODS:
   - MiniLayout (1.1.0)
-  - MultiToggleButton (1.4.0)
+  - MultiToggleButton (1.5.1)
 
 DEPENDENCIES:
   - MiniLayout
@@ -8,12 +8,12 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   MultiToggleButton:
-    :path: ..
+    :path: ".."
 
 SPEC CHECKSUMS:
   MiniLayout: 7664ed112a89d954e6ccb83b6ef5dc122fb77852
-  MultiToggleButton: 7b8e388a322277b74a5b2e6fb5efec9877a15aff
+  MultiToggleButton: d0546e52a35dc36f161a20b7cbf89a0b7d6acdfd
 
 PODFILE CHECKSUM: 98d9422f7ee60cdc52dc44f30f32a63badb089cd
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0
