@@ -36,21 +36,21 @@ open class MultiToggleButton: UIButton
     
     // MARK: - Manual Control
     
-    open func toggle() {
+    @objc open func toggle() {
         currentStateIndex = (currentStateIndex + 1) % states.count
         action?(self)
     }
     
-    open var currentStateIndex: Int = 0      { didSet {setupCurrentState()} }
+    @objc open var currentStateIndex: Int = 0      { didSet {setupCurrentState()} }
     open var colors: [UIColor?] = []         { didSet {setupCurrentState()} }
     open var images: [UIImage?] = []         { didSet {setupCurrentState()} }
-    open var states: [String] = [] {
+    @objc open var states: [String] = [] {
         didSet {
             currentStateIndex %= states.count
             setupCurrentState()
         }
     }
-    open var action: ((_ sender: MultiToggleButton) -> ())? {
+    @objc open var action: ((_ sender: MultiToggleButton) -> ())? {
         didSet {
             addTarget(self, action: #selector(toggle), for: .touchUpInside)
         }
