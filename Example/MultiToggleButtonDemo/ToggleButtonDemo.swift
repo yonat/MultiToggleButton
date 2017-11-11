@@ -22,10 +22,15 @@ class ToggleButtonViewController: UIViewController {
                 UIImage(named: "test_tube")
             ],
             states: ["Toggle", "State", "Alter", "Color"],
-            colors: [nil, nil, .gray, .red]
+            colors: [nil, nil, .gray, .red],
+            backgroundColors: [nil, nil, .yellow, UIColor.lightGray.withAlphaComponent(0.25)]
         ) { button in
             print("Performing action for state: \(button.currentStateIndex)")
         }
+
+        // make background coloring appear nicer
+        toggleButton.contentEdgeInsets = UIEdgeInsets(top: 2, left: 8, bottom: 2, right: 8)
+        toggleButton.layer.cornerRadius = 8
 
         view.addConstrainedSubview(toggleButton, constrain: .centerX, .centerY)
     }

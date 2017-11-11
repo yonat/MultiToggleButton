@@ -13,7 +13,7 @@ public typealias ToggleButton = MultiToggleButton // compatibility with old vers
 open class MultiToggleButton: UIButton
 {
     /// use only this init, it's 'convenience' only to avoid overriding required inits
-    public convenience init(images: [UIImage?], states: [String], colors: [UIColor?] = [], action: ((_ sender: MultiToggleButton) -> ())? = nil) {
+    public convenience init(images: [UIImage?], states: [String], colors: [UIColor?] = [], backgroundColors: [UIColor?] = [], action: ((_ sender: MultiToggleButton) -> ())? = nil) {
         self.init(frame: CGRect.zero)
         
         if let image = images.first {
@@ -24,14 +24,15 @@ open class MultiToggleButton: UIButton
         self.images = images
         self.states = states
         self.colors = colors
+        self.backgroundColors = backgroundColors
         self.action = action
         addTarget(self, action: #selector(toggle), for: .touchUpInside)
         
         setupCurrentState()
     }
     
-    public convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], action: ((_ sender: MultiToggleButton) -> ())? = nil) {
-        self.init(images: [image], states: states, colors: colors, action: action)
+    public convenience init(image: UIImage?, states: [String], colors: [UIColor?] = [], backgroundColors: [UIColor?] = [], action: ((_ sender: MultiToggleButton) -> ())? = nil) {
+        self.init(images: [image], states: states, colors: colors, backgroundColors: backgroundColors, action: action)
     }
     
     // MARK: - Manual Control
@@ -41,9 +42,10 @@ open class MultiToggleButton: UIButton
         action?(self)
     }
     
-    @objc open var currentStateIndex: Int = 0      { didSet {setupCurrentState()} }
-    open var colors: [UIColor?] = []         { didSet {setupCurrentState()} }
-    open var images: [UIImage?] = []         { didSet {setupCurrentState()} }
+    @objc open var currentStateIndex: Int = 0       { didSet {setupCurrentState()} }
+    open var colors: [UIColor?] = []                { didSet {setupCurrentState()} }
+    open var backgroundColors: [UIColor?] = []      { didSet {setupCurrentState()} }
+    open var images: [UIImage?] = []                { didSet {setupCurrentState()} }
     @objc open var states: [String] = [] {
         didSet {
             currentStateIndex %= states.count
@@ -70,6 +72,7 @@ open class MultiToggleButton: UIButton
         let currentTitle = states[currentStateIndex]
         setTitle(currentTitle.isEmpty ? nil : " " + currentTitle, for: UIControlState())
         setTitleColor(currentColor ?? tintColor, for: UIControlState())
+        backgroundColor = currentBackgroundColor ?? .clear
         setImage(currentToggleImage ?? currentImage, for: UIControlState())
     }
     
@@ -77,6 +80,10 @@ open class MultiToggleButton: UIButton
         return currentStateIndex < colors.count ? colors[currentStateIndex] : nil
     }
     
+    private var currentBackgroundColor: UIColor? {
+        return currentStateIndex < backgroundColors.count ? backgroundColors[currentStateIndex] : nil
+    }
+
     private var currentToggleImage: UIImage? {
         return currentStateIndex < images.count ? images[currentStateIndex] : nil
     }
