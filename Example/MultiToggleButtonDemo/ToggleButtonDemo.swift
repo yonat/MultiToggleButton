@@ -6,20 +6,19 @@
 //  Copyright (c) 2015 Yonat Sharon. All rights reserved.
 //
 
-import UIKit
-import MultiToggleButton
 import MiniLayout
+import MultiToggleButton
+import UIKit
 
 class ToggleButtonViewController: UIViewController {
-
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
         let toggleButton = MultiToggleButton(
             images: [
                 UIImage(named: "camera-flash"),
                 UIImage(named: "facebook"),
                 UIImage(named: "clock"),
-                UIImage(named: "test_tube")
+                UIImage(named: "test_tube"),
             ],
             states: ["Toggle", "State", "Alter", "Color"],
             colors: [nil, nil, .gray, .red],
@@ -38,7 +37,6 @@ class ToggleButtonViewController: UIViewController {
 
 @UIApplicationMain
 class ToggleButtonDemo: UIResponder, UIApplicationDelegate {
-
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
