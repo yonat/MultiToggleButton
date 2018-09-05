@@ -22,7 +22,7 @@ open class MultiToggleButton: UIButton {
         self.init(frame: CGRect.zero)
 
         if let image = images.first {
-            setImage(image, for: UIControlState())
+            setImage(image, for: .normal)
         }
         sizeToFit()
 
@@ -73,7 +73,7 @@ open class MultiToggleButton: UIButton {
 
     open override func tintColorDidChange() {
         if nil == currentColor {
-            setTitleColor(tintColor, for: UIControlState())
+            setTitleColor(tintColor, for: .normal)
         }
     }
 
@@ -81,10 +81,10 @@ open class MultiToggleButton: UIButton {
 
     private func setupCurrentState() {
         let currentTitle = states[currentStateIndex]
-        setTitle(currentTitle.isEmpty ? nil : " " + currentTitle, for: UIControlState())
-        setTitleColor(currentColor ?? tintColor, for: UIControlState())
+        setTitle(currentTitle.isEmpty ? nil : " " + currentTitle, for: .normal)
+        setTitleColor(currentColor ?? tintColor, for: .normal)
         backgroundColor = currentBackgroundColor ?? .clear
-        setImage(currentToggleImage ?? currentImage, for: UIControlState())
+        setImage(currentToggleImage ?? currentImage, for: .normal)
     }
 
     private var currentColor: UIColor? {
