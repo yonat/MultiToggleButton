@@ -59,11 +59,6 @@ let toggleButton = ToggleButton(
 )
 ```
 
-## Requirements
-
-- iOS 8.0+
-- Xcode 7.3
-
 ## Installation
 
 ### CocoaPods:
@@ -72,11 +67,13 @@ let toggleButton = ToggleButton(
 pod 'MultiToggleButton'
 ```
 
-For legacy Swift 2.3:
+Legacy versions:
 
-```ruby
-pod 'MultiToggleButton', '1.4.0'
-```
+| Swift version | MultiToggleButton version |
+| :---: | :---: |
+| 4.0 | 1.7.1 |
+| 3 | 1.5.2 |
+| 2.3 | 1.4.0 |
 
 ### Manually:
 
@@ -88,7 +85,7 @@ Copy `Sources/MultiToggleButton.swift` to your Xcode project.
 
 [https://github.com/yonat/MultiToggleButton](https://github.com/yonat/MultiToggleButton)
 
-[swift-image]:https://img.shields.io/badge/swift-4.0-orange.svg
+[swift-image]:https://img.shields.io/badge/swift-4.2-orange.svg
 [swift-url]: https://swift.org/
 [license-image]: https://img.shields.io/badge/License-MIT-blue.svg
 [license-url]: LICENSE.txt
