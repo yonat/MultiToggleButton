@@ -71,9 +71,9 @@ Legacy versions:
 
 | Swift version | MultiToggleButton version |
 | :---: | :---: |
-| 4.0 | 1.7.1 |
-| 3 | 1.5.2 |
-| 2.3 | 1.4.0 |
+| 4.0 (Xcode 9.4) | `pod 'MultiToggleButton', '~> 1.7.1'` |
+| 3 | `pod 'MultiToggleButton', '~> 1.5.2'` |
+| 2.3 | `pod 'MultiToggleButton', '~> 1.4.0'` |
 
 ### Manually:
 
