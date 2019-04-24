@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A12B377FB76B7BB546AF1744 /* Pods_MultiToggleButtonDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 36342501556D3E0E08DC5C08 /* Pods_MultiToggleButtonDemo.framework */; };
+		C80F0FBCA622A8DC059D9697 /* libPods-MultiToggleButtonDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 534C533AA5B4026C4B0D559D /* libPods-MultiToggleButtonDemo.a */; };
 		DC5E611E1DE628A70063B0D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC5E611C1DE628A70063B0D8 /* LaunchScreen.storyboard */; };
 		DC5E612A1DE6295E0063B0D8 /* camera-flash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61251DE6295E0063B0D8 /* camera-flash@2x.png */; };
 		DC5E612B1DE6295E0063B0D8 /* clock.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61261DE6295E0063B0D8 /* clock.png */; };
@@ -18,7 +18,7 @@
 
 /* Begin PBXFileReference section */
 		0A1E3D7EC9DEFAD305D7D0F0 /* Pods-MultiToggleButtonDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiToggleButtonDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo.release.xcconfig"; sourceTree = "<group>"; };
-		36342501556D3E0E08DC5C08 /* Pods_MultiToggleButtonDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultiToggleButtonDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		534C533AA5B4026C4B0D559D /* libPods-MultiToggleButtonDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MultiToggleButtonDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C353DD3F576DFDA6EA48A38D /* Pods-MultiToggleButtonDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultiToggleButtonDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		DC5E61101DE628A70063B0D8 /* MultiToggleButtonDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiToggleButtonDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC5E611D1DE628A70063B0D8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A12B377FB76B7BB546AF1744 /* Pods_MultiToggleButtonDemo.framework in Frameworks */,
+				C80F0FBCA622A8DC059D9697 /* libPods-MultiToggleButtonDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,7 +45,7 @@
 		935C13C6E41231C23DF1592A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36342501556D3E0E08DC5C08 /* Pods_MultiToggleButtonDemo.framework */,
+				534C533AA5B4026C4B0D559D /* libPods-MultiToggleButtonDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -99,12 +99,13 @@
 			buildConfigurationList = DC5E61221DE628A70063B0D8 /* Build configuration list for PBXNativeTarget "MultiToggleButtonDemo" */;
 			buildPhases = (
 				7313476D0B2974DC65D83BB2 /* [CP] Check Pods Manifest.lock */,
-				DCD5945520B17939001B6E44 /* ShellScript */,
+				0F485A05B912C8BA38ED0487 /* [CP-User] SwiftFormat */,
+				4E25180577CF59172A8FBF37 /* [CP-User] SwiftLintAutocorrect */,
 				DC5E610C1DE628A70063B0D8 /* Sources */,
 				DC5E610D1DE628A70063B0D8 /* Frameworks */,
 				DC5E610E1DE628A70063B0D8 /* Resources */,
-				634A53F2F24E5448902CE116 /* [CP] Embed Pods Frameworks */,
-				DCD5945620B1794E001B6E44 /* ShellScript */,
+				8119AE10C5734B04A650C5DA /* [CP] Copy Pods Resources */,
+				FF418F68FBEB9ECC38263743 /* [CP-User] SwiftLint */,
 			);
 			buildRules = (
 			);
@@ -166,24 +167,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		634A53F2F24E5448902CE116 /* [CP] Embed Pods Frameworks */ = {
+		0F485A05B912C8BA38ED0487 /* [CP-User] SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/MiniLayout/MiniLayout.framework",
-				"${BUILT_PRODUCTS_DIR}/MultiToggleButton/MultiToggleButton.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			name = "[CP-User] SwiftFormat";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MiniLayout.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MultiToggleButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-frameworks.sh\"\n";
+			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat --swiftversion ${SWIFT_VERSION} --config ${PODS_ROOT}/SwiftQuality/.swiftformat ${SRCROOT}/.. ; fi";
+			showEnvVarsInLog = 0;
+		};
+		4E25180577CF59172A8FBF37 /* [CP-User] SwiftLintAutocorrect */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[CP-User] SwiftLintAutocorrect";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftLint/swiftlint autocorrect --config ${PODS_ROOT}/SwiftQuality/.swiftlint.yml --path ${SRCROOT}/.. ; fi";
 			showEnvVarsInLog = 0;
 		};
 		7313476D0B2974DC65D83BB2 /* [CP] Check Pods Manifest.lock */ = {
@@ -204,31 +223,48 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DCD5945520B17939001B6E44 /* ShellScript */ = {
+		8119AE10C5734B04A650C5DA /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh",
+				"${PODS_ROOT}/SwiftQuality/.swiftformat",
+				"${PODS_ROOT}/SwiftQuality/.swiftlint.yml",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftformat",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftlint.yml",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftformat >/dev/null; then\nswiftformat --stripunusedargs unnamed-only \"${SRCROOT}/../Sources\"\nswiftformat --stripunusedargs unnamed-only \"${SRCROOT}\"\nfi";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
-		DCD5945620B1794E001B6E44 /* ShellScript */ = {
+		FF418F68FBEB9ECC38263743 /* [CP-User] SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
+			inputFileListPaths = (
+			);
 			inputPaths = (
+			);
+			name = "[CP-User] SwiftLint";
+			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\nswiftlint lint --config \"${SRCROOT}/../Sources/.swiftlint.yml\"\ncd \"${SRCROOT}/../Sources\"\nswiftlint\nfi";
+			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftLint/swiftlint --config ${PODS_ROOT}/SwiftQuality/.swiftlint.yml --path ${SRCROOT}/.. ; fi";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 

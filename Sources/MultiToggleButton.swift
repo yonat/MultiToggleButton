@@ -63,6 +63,7 @@ open class MultiToggleButton: UIButton {
             setupCurrentState()
         }
     }
+
     @objc open var action: ((_ sender: MultiToggleButton) -> Void)? {
         didSet {
             addTarget(self, action: #selector(toggle), for: .touchUpInside)

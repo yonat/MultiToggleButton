@@ -1,23 +1,41 @@
 PODS:
   - MiniLayout (1.3.0)
-  - MultiToggleButton (1.7.1)
+  - MultiToggleButton (1.8.0)
+  - SwiftFormat/CLI (0.40.8)
+  - SwiftLint (0.31.0)
+  - SwiftQuality (1.0.0):
+    - SwiftFormat/CLI (= 0.40.8)
+    - SwiftLint (= 0.31.0)
 
 DEPENDENCIES:
   - MiniLayout
   - MultiToggleButton (from `..`)
+  - SwiftQuality (from `https://github.com/yonat/SwiftQuality`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - MiniLayout
+    - SwiftFormat
+    - SwiftLint
 
 EXTERNAL SOURCES:
   MultiToggleButton:
     :path: ".."
+  SwiftQuality:
+    :git: https://github.com/yonat/SwiftQuality
+
+CHECKOUT OPTIONS:
+  SwiftQuality:
+    :commit: e08572a726ab3178041bf37966db7dce8900c1d2
+    :git: https://github.com/yonat/SwiftQuality
 
 SPEC CHECKSUMS:
   MiniLayout: 57c42e7e44cb47a9ef95650970ee1d2718725518
-  MultiToggleButton: c62190ba44c547636e078cc30861e6897919f94e
+  MultiToggleButton: eca1625dab98b028e878c18c624eee05cac83c96
+  SwiftFormat: d9e5ca1aed735164fe9d26510ec508ddb8a93598
+  SwiftLint: 7a0227733d786395817373b2d0ca799fd0093ff3
+  SwiftQuality: 7e8e9783387fc64d0ad6f8a315507c9c0013dee8
 
-PODFILE CHECKSUM: 98d9422f7ee60cdc52dc44f30f32a63badb089cd
+PODFILE CHECKSUM: 4d986b968e5e1b7503fef31d510823ad3f6f9cef
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.6.1
