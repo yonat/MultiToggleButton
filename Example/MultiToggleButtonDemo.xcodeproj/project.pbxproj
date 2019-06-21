@@ -14,6 +14,8 @@
 		DC5E612C1DE6295E0063B0D8 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61271DE6295E0063B0D8 /* facebook.png */; };
 		DC5E612D1DE6295E0063B0D8 /* test_tube.png in Resources */ = {isa = PBXBuildFile; fileRef = DC5E61281DE6295E0063B0D8 /* test_tube.png */; };
 		DC5E612E1DE6295E0063B0D8 /* ToggleButtonDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC5E61291DE6295E0063B0D8 /* ToggleButtonDemo.swift */; };
+		DC8FD8EF22BCF9BF00E35EDB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DC8FD8ED22BCF9BF00E35EDB /* README.md */; };
+		DC8FD8F022BCF9BF00E35EDB /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = DC8FD8EE22BCF9BF00E35EDB /* CHANGELOG.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		DC5E61271DE6295E0063B0D8 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
 		DC5E61281DE6295E0063B0D8 /* test_tube.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test_tube.png; sourceTree = "<group>"; };
 		DC5E61291DE6295E0063B0D8 /* ToggleButtonDemo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToggleButtonDemo.swift; sourceTree = "<group>"; };
+		DC8FD8ED22BCF9BF00E35EDB /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DC8FD8EE22BCF9BF00E35EDB /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = CHANGELOG.md; path = ../CHANGELOG.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 		DC5E61071DE628A70063B0D8 = {
 			isa = PBXGroup;
 			children = (
+				DC8FD8ED22BCF9BF00E35EDB /* README.md */,
+				DC8FD8EE22BCF9BF00E35EDB /* CHANGELOG.md */,
 				DC5E61121DE628A70063B0D8 /* MultiToggleButtonDemo */,
 				DC5E61111DE628A70063B0D8 /* Products */,
 				EFCB9201B9C33CCF682EA739 /* Pods */,
@@ -123,7 +129,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Yonat Sharon";
 				TargetAttributes = {
 					DC5E610F1DE628A70063B0D8 = {
@@ -135,7 +141,7 @@
 			};
 			buildConfigurationList = DC5E610B1DE628A70063B0D8 /* Build configuration list for PBXProject "MultiToggleButtonDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -156,10 +162,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC8FD8EF22BCF9BF00E35EDB /* README.md in Resources */,
 				DC5E612A1DE6295E0063B0D8 /* camera-flash@2x.png in Resources */,
 				DC5E612C1DE6295E0063B0D8 /* facebook.png in Resources */,
 				DC5E612B1DE6295E0063B0D8 /* clock.png in Resources */,
 				DC5E612D1DE6295E0063B0D8 /* test_tube.png in Resources */,
+				DC8FD8F022BCF9BF00E35EDB /* CHANGELOG.md in Resources */,
 				DC5E611E1DE628A70063B0D8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,15 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
 			name = "[CP-User] SwiftFormat";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat --swiftversion ${SWIFT_VERSION} --config ${PODS_ROOT}/SwiftQuality/.swiftformat ${SRCROOT}/.. ; fi";
@@ -191,15 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
 			name = "[CP-User] SwiftLintAutocorrect";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftLint/swiftlint autocorrect --config ${PODS_ROOT}/SwiftQuality/.swiftlint.yml --path ${SRCROOT}/.. ; fi";
@@ -228,16 +220,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh",
 				"${PODS_ROOT}/SwiftQuality/.swiftformat",
 				"${PODS_ROOT}/SwiftQuality/.swiftlint.yml",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftformat",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftlint.yml",
@@ -252,15 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
 			name = "[CP-User] SwiftLint";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then ${PODS_ROOT}/SwiftLint/swiftlint --config ${PODS_ROOT}/SwiftQuality/.swiftlint.yml --path ${SRCROOT}/.. ; fi";
@@ -340,12 +320,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -393,10 +374,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -410,7 +392,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.MultiToggleButtonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -422,7 +403,6 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.roysharon.MultiToggleButtonDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
