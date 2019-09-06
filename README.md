@@ -75,9 +75,13 @@ Legacy versions:
 | 3 | `pod 'MultiToggleButton', '~> 1.5.2'` |
 | 2.3 | `pod 'MultiToggleButton', '~> 1.4.0'` |
 
-### Manually:
+### Swift Package Manager:
 
-Copy `Sources/MultiToggleButton.swift` to your Xcode project.
+```swift
+dependencies: [
+    .package(url: "https://github.com/yonat/MultiToggleButton", from: "1.8.2")
+]
+```
 
 ## Meta
 
