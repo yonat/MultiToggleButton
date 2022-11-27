@@ -110,7 +110,6 @@
 				DC5E610C1DE628A70063B0D8 /* Sources */,
 				DC5E610D1DE628A70063B0D8 /* Frameworks */,
 				DC5E610E1DE628A70063B0D8 /* Resources */,
-				8119AE10C5734B04A650C5DA /* [CP] Copy Pods Resources */,
 				FF418F68FBEB9ECC38263743 /* [CP-User] SwiftLint */,
 			);
 			buildRules = (
@@ -177,24 +176,26 @@
 /* Begin PBXShellScriptBuildPhase section */
 		0F485A05B912C8BA38ED0487 /* [CP-User] SwiftFormat */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			name = "[CP-User] SwiftFormat";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then \"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" --swiftversion ${SWIFT_VERSION} --config \"${PODS_ROOT}/SwiftQuality/.swiftformat\" \"${SRCROOT}/..\" ; fi";
+			shellScript = "if [[ \"Debug\" == \"${CONFIGURATION}\" && ! $ENABLE_PREVIEWS == \"YES\" ]]; then \"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" --swiftversion ${SWIFT_VERSION} --config \"${PODS_ROOT}/SwiftQuality/.swiftformat\" \"${SRCROOT}/..\" ; fi";
 			showEnvVarsInLog = 0;
 		};
 		4E25180577CF59172A8FBF37 /* [CP-User] SwiftLintAutocorrect */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			name = "[CP-User] SwiftLintAutocorrect";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then \"${PODS_ROOT}/SwiftLint/swiftlint\" autocorrect --config \"${PODS_ROOT}/SwiftQuality/.swiftlint.yml\" --path \"${SRCROOT}/..\" ; fi";
+			shellScript = "if [[ \"Debug\" == \"${CONFIGURATION}\" && ! $ENABLE_PREVIEWS == \"YES\" ]]; then \"${PODS_ROOT}/SwiftLint/swiftlint\" --fix --config \"${PODS_ROOT}/SwiftQuality/.swiftlint.yml\" \"${SRCROOT}/..\" ; fi";
 			showEnvVarsInLog = 0;
 		};
 		7313476D0B2974DC65D83BB2 /* [CP] Check Pods Manifest.lock */ = {
@@ -215,35 +216,16 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8119AE10C5734B04A650C5DA /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh",
-				"${PODS_ROOT}/SwiftQuality/.swiftformat",
-				"${PODS_ROOT}/SwiftQuality/.swiftlint.yml",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftformat",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/.swiftlint.yml",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		FF418F68FBEB9ECC38263743 /* [CP-User] SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			name = "[CP-User] SwiftLint";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" ]; then \"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"${PODS_ROOT}/SwiftQuality/.swiftlint.yml\" --path \"${SRCROOT}/..\" ; fi";
+			shellScript = "if [ \"Debug\" == \"${CONFIGURATION}\" && ! $ENABLE_PREVIEWS == \"YES\" ]; then \"${PODS_ROOT}/SwiftLint/swiftlint\" --config \"${PODS_ROOT}/SwiftQuality/.swiftlint.yml\" \"${SRCROOT}/..\" ; fi";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -320,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -374,7 +356,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

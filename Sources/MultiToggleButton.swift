@@ -72,7 +72,7 @@ open class MultiToggleButton: UIButton {
 
     // MARK: - Overrides
 
-    open override func tintColorDidChange() {
+    override open func tintColorDidChange() {
         if nil == currentColor {
             setTitleColor(tintColor, for: .normal)
         }
