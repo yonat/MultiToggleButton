@@ -111,6 +111,7 @@
 				DC5E610D1DE628A70063B0D8 /* Frameworks */,
 				DC5E610E1DE628A70063B0D8 /* Resources */,
 				FF418F68FBEB9ECC38263743 /* [CP-User] SwiftLint */,
+				E54AA3C97E2BE308061CC988 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +215,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E54AA3C97E2BE308061CC988 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh",
+				"${PODS_ROOT}/../../PrivacyInfo.xcprivacy",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/PrivacyInfo.xcprivacy",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultiToggleButtonDemo/Pods-MultiToggleButtonDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FF418F68FBEB9ECC38263743 /* [CP-User] SwiftLint */ = {

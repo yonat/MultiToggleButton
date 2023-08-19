@@ -17,11 +17,11 @@ Pod::Spec.new do |s|
   s.author             = { "Yonat Sharon" => "yonat@ootips.org" }
   s.social_media_url   = "https://twitter.com/yonatsharon"
 
-  s.swift_version = '4.2'
-  s.swift_versions = ['4.2', '5.0']
-  s.platform     = :ios, "8.0"
+  s.swift_versions = ['5.0']
+  s.platform     = :ios, "11.0"
   s.requires_arc = true
 
   s.source       = { :git => "https://github.com/yonat/MultiToggleButton.git", :tag => s.version }
   s.source_files  = "Sources/*.swift"
+  s.resources = ['PrivacyInfo.xcprivacy']
 end
