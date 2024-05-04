@@ -1,5 +1,5 @@
 //
-//  AppDelegate.swift
+//  ToggleButtonDemo.swift
 //  ToggleButtonDemo
 //
 //  Created by Yonat Sharon on 02.03.2015.

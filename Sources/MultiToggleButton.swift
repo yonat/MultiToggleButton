@@ -86,6 +86,7 @@ open class MultiToggleButton: UIButton {
         setTitleColor(currentColor ?? tintColor, for: .normal)
         backgroundColor = currentBackgroundColor ?? .clear
         setImage(currentToggleImage ?? currentImage, for: .normal)
+        imageView?.tintColor = titleColor(for: .normal)
     }
 
     private var currentColor: UIColor? {
