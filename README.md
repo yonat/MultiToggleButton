@@ -79,7 +79,7 @@ Legacy versions:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/yonat/MultiToggleButton", from: "1.8.7")
+    .package(url: "https://github.com/yonat/MultiToggleButton", from: "1.8.8")
 ]
 ```
 
